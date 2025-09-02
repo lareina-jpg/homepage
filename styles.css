@@ -1,0 +1,20 @@
+body {
+    background:rgb(255, 232, 167);
+    color:rgb(0, 0, 0);
+    font-family:Courier New;
+}
+
+p {
+    color:rgb(0, 0, 0);
+    margin:30px;
+    font-family:Courier New;
+}
+
+a {
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+}
+
+a:hover {
+    color:rgb(72, 17, 150);
+}
