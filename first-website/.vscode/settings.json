@@ -1,0 +1,10 @@
+{
+    "editor.suggestOnTriggerCharacters": false,
+    "terminal.integrated.suggest.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.suggest.matchOnWordStartOnly": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "html.autoClosingTags": false,
+    "javascript.autoClosingTags": false,
+    "typescript.autoClosingTags": false
+}

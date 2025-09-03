@@ -1,5 +1,5 @@
 body {
-    background:rgb(255, 232, 167);
+    background:rgb(189, 220, 255);
     color:rgb(0, 0, 0);
     font-family:Courier New;
 }
@@ -12,7 +12,7 @@ p {
 
 a {
     color:rgb(0, 0, 0);
-    text-decoration:none;
+    text-decoration:underline;
 }
 
 a:hover {
