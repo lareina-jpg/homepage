@@ -1,0 +1,77 @@
+*{
+    box-sizing:border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+.container {
+    background:lightblue;
+    height:700px;
+    /* we don't need to set up a width to fill up the width of the screen. it does this automatically as a div element */
+
+    display:flex;
+    /* by default, it will organize things as a row, which you will correct with flex-direction */
+    flex-direction:column;
+
+    padding:10px;
+    gap:10px;
+}
+
+.top {
+    background:yellow;
+    height:25%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+    /* to create space between the elements, we use gap */
+    gap:10px;
+}
+
+.top-item {
+    background:salmon;
+    width:100%;
+    /* flexbox will keep everything in a single line unless we tell it to wrap, so you can make each item 100% size */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.bottom {
+    background:orange;
+    height:75%;
+    display:flex;
+    gap:10px;
+}
+
+.left {
+    background:olive;
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.left-item {
+    background:pink;
+    width:20%;
+    height:30%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.right {
+    background:purple;
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.right-item {
+    background:pink;
+    height:100%;
+}

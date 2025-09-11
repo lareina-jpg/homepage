@@ -1,0 +1,53 @@
+*{
+    box-sizing:border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+.container {
+    background:lightblue;
+    padding:10px;
+    display:flex;
+
+    /* 
+    flex-direction will determine the main axis
+    row = horizontal main axis (default) 
+    column = vertical main axis
+
+    focus on row orientation when you're starting out
+    */
+    flex-direction:row;
+
+    flex-wrap:wrap;
+
+    /* aligns items along the main axis */
+    justify-content:center;
+
+    height:400px;
+
+    /* align-items is used for single-line non-wrapping flexboxes. it aligns along the cross axis */
+    align-items:center;
+
+    /* align-content is used for multi-line wrapping flexboxes and it aligns along the cross axis */
+    align-content:center;
+
+    /* gap explicitly controls the space between flex items. It applies that spacing only between items not on the outer edges. */
+    gap:10px;
+}
+
+.item {
+    background:bisque;
+    padding:10px;
+    border:1px solid;
+
+    width:200px;
+    height:100px;
+
+    display:flex;
+    justify-content:center;
+
+    /* align-content wouldn't work here because it's only a single line */
+    align-items:center;
+}
