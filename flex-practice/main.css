@@ -6,10 +6,18 @@ img {
     max-width:100%;
 }
 
+body {
+    margin:0px;
+}
+
 .container {
     background:lightblue;
-    height:700px;
     /* we don't need to set up a width to fill up the width of the screen. it does this automatically as a div element */
+    /* height:100% does not equal the height of the browser window, it's just the height of the element's total contents */
+
+    /* vh stands for viewport height */
+    height:100vh;
+    /* what's causing this extra vertical scroll when you say 100vh? it's the margin around the body. every website has a body margin by default (around 8px). you solve this by creating a rule for the body with a margin:0px; */
 
     display:flex;
     /* by default, it will organize things as a row, which you will correct with flex-direction */
@@ -20,7 +28,7 @@ img {
 }
 
 .top {
-    background:yellow;
+    /* background:yellow; */
     height:25%;
     display:flex;
     flex-direction:row;
@@ -31,7 +39,7 @@ img {
 }
 
 .top-item {
-    background:salmon;
+    background:salmon; 
     width:100%;
     /* flexbox will keep everything in a single line unless we tell it to wrap, so you can make each item 100% size */
     display:flex;
@@ -40,14 +48,15 @@ img {
 }
 
 .bottom {
-    background:orange;
+    /* background:orange; */
     height:75%;
     display:flex;
     gap:10px;
+    /* you can add padding:10px; if you want more space around the whole bottom box */
 }
 
 .left {
-    background:olive;
+    background:olive; 
     width:50%;
     display:flex;
     justify-content:center;
@@ -64,7 +73,7 @@ img {
 }
 
 .right {
-    background:purple;
+    /* background:purple; */
     width:50%;
     display:flex;
     flex-direction:column;
@@ -74,4 +83,7 @@ img {
 .right-item {
     background:pink;
     height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }

@@ -1,0 +1,177 @@
+*{
+    box-sizing:border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+body {
+    margin:0px;
+    cursor: url('boat.png'), auto;
+}
+
+/* a { 
+    cursor:
+}
+
+a.hover {
+    cursor:
+} */
+
+/* .title {
+    font-family:"Courier New";
+} */
+
+.container {
+    background:lightblue;
+    height:100vh;
+    /* what's causing this extra vertical scroll when you say 100vh? it's the margin around the body. every website has a body margin by default (around 8px). you solve this by creating a rule for the body with a margin:0px; */
+
+    display:flex;
+    flex-direction:column;
+}
+
+.moon {
+    background:rgb(225, 235, 241); 
+    width:150px;
+    height: 150px; 
+    border-radius: 50%; 
+    position: relative; 
+    top: 70px; 
+    left: 70px;
+    box-shadow: 0 0 20px 5px rgb(219, 248, 242);
+
+}
+
+.top {
+    background:rgb(0, 0, 0);
+    height:40%;
+    display:flex;
+    position:relative;
+    flex-direction:row;
+    justify-content:space-between;
+    
+}
+
+.bottom {
+    background:rgb(27, 27, 105);
+    height:75%;
+    display:flex;
+    gap:10px;
+    
+    background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
+    background-size: 20px 20px; /* Adjust dot spacing */
+    background-repeat: repeat; /* Ensure the pattern repeats */
+
+}
+
+.left {
+    /* background:yellow; */
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:100px;
+}
+
+.left-item {
+    background:rgb(245, 251, 200);
+    width:10%;
+    height:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:40%;
+    box-shadow: 0 0 20px 8px rgb(13, 23, 30);
+}
+
+.right {
+    /* background:yellow;  */
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:100px;
+    padding:5%;
+}
+
+.right-item {
+    /* background:rgb(245, 251, 200); 
+    width:30%;
+    height:100%;
+    display:flex; 
+    justify-content:center;
+    align-items:center;
+    border-radius:45%;
+    box-shadow: 0 0 20px 8px rgb(13, 23, 30);*/
+    background:rgb(245, 251, 200);
+    width:10%;
+    height:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:40%;
+    box-shadow: 0 0 20px 8px rgb(13, 23, 30);
+}
+
+.harbor {
+    /* background:yellow; */
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:100px;
+}
+
+.harbor-item {
+    background:rgb(245, 251, 200);
+    width:60%;
+    height:60%;
+    display:flex; 
+    justify-content:center;
+    align-items:center;
+    border-radius:45%;
+    box-shadow: 0 0 30px 10px rgb(13, 23, 30);
+
+}
+
+.coast {
+    /* background:yellow; */
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:100px;
+}
+
+.coast-item {
+    background:rgb(245, 251, 200);
+    width:100%;
+    height:70%;
+    border-radius:50% 50% 0 0;
+    box-shadow: 0 0 50px 30px rgb(13, 23, 30);
+}
+
+
+/*  #mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border-radius:0 0 100% 100%;
+  width:100px;
+  height:40px;
+  /* box-shadow: 0 0 10px 2px rgb(219, 248, 242); 
+  transform:rotate(45deg);
+  width:10px;
+  height:10px;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  color: #fff;
+} */
