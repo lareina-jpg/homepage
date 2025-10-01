@@ -18,3 +18,7 @@ a {
 a:hover {
     color:rgb(72, 17, 150);
 }
+
+h1 {
+    margin:30px;
+}

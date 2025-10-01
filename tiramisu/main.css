@@ -1,0 +1,102 @@
+*{
+    box-sizing:border-box;
+}
+
+body {
+    background:floralwhite;
+    transition: background 0.5s, font-size 0.5s;
+}
+
+img {
+    max-width:100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* if you don't want to use flexbox and only need to center horizontally. "margin" is a shorthand for top/bottom and left/right. direction=clockwise from top. */
+}
+
+header, .left, .center, .right, footer, .mobile-banner {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+header, footer {
+    text-align:center;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+.mobile-banner {
+    margin-bottom:10px;
+    background:mediumspringgreen;
+    text-align: center;
+
+    display:none;
+}
+
+main {
+    display:flex;
+    gap: 10px;
+}
+
+.left, .right {
+    width: 25%;
+}
+
+.center {
+    width: 50%;
+}
+
+/* tablet media inquiry, or 992px */
+@media screen and (max-width: 1000px) {
+    body {
+        background:orange;
+        font-size: 1.25rem;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    .left {
+    width: 100%;
+    }
+
+    .center, .right {
+    width: calc(50% - 5px);
+    }
+    
+}
+
+/* example 800px media query */
+@media screen and (max-width: 800px) {
+    body {
+        background:lightblue;
+    }
+}
+
+/* phone media query */
+@media screen and (max-width:600px) {
+    body {
+        background:limegreen;
+        font-size:2rem;
+    }
+
+    .left, .center, .right {
+    width: 100%;
+    }
+
+    .mobile-banner {
+        display:block;
+    }
+}
+
+/* you could also switch flex direction to column */

@@ -1,0 +1,54 @@
+/* order media queries from largest to smallest: desktop rules, then tablet rules, then phone rules */
+
+*{
+    box-sizing:border-box;
+}
+
+/* img isn't automatically responsive like everything else, which is why we have this rule */
+
+img {
+    max-width:100%;
+}
+
+p {
+    background:lightblue;
+    padding:10px;
+    max-width:700px;
+}
+
+/* you can add as many media queries as you want, desktop, tablet, and phone are just the most common ones. */
+
+/*
+    max width=desktop first
+    min width=mobile first
+*/
+
+/* tablet media inquiry, or 992px */
+@media screen and (max-width: 1000px) {
+    body {
+        background:orange;
+    }
+
+    p {
+        background:pink;
+    }
+}
+
+/* example 800px media query */
+@media screen and (max-width: 800px) {
+    body {
+        background:lightblue;
+    }
+}
+
+/* phone media query */
+@media screen and (max-width:600px) {
+    body {
+        background:limegreen;
+    }
+
+    p {
+        background:lightyellow;
+    }
+}
+

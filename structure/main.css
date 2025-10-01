@@ -8,7 +8,7 @@ img {
 
 body {
     margin:0px;
-    cursor: url('boat.png'), auto;
+    cursor: url('images/boat-2.png') 10 10, auto;
 }
 
 /* a { 
@@ -41,7 +41,7 @@ a.hover {
     top: 70px; 
     left: 70px;
     box-shadow: 0 0 20px 5px rgb(219, 248, 242);
-
+    cursor: url('images/rocket.png') 10 10, auto;
 }
 
 .top {
@@ -84,6 +84,7 @@ a.hover {
     align-items:center;
     border-radius:40%;
     box-shadow: 0 0 20px 8px rgb(13, 23, 30);
+    cursor: url('images/house.png') 10 10, auto;
 }
 
 .right {
@@ -114,6 +115,7 @@ a.hover {
     align-items:center;
     border-radius:40%;
     box-shadow: 0 0 20px 8px rgb(13, 23, 30);
+    cursor: url('images/house.png') 10 10, auto;
 }
 
 .harbor {
@@ -134,6 +136,7 @@ a.hover {
     align-items:center;
     border-radius:45%;
     box-shadow: 0 0 30px 10px rgb(13, 23, 30);
+    cursor: url('images/house.png') 10 10, auto;
 
 }
 
@@ -153,6 +156,7 @@ a.hover {
     height:70%;
     border-radius:50% 50% 0 0;
     box-shadow: 0 0 50px 30px rgb(13, 23, 30);
+    cursor: url('images/house.png') 10 10, auto;
 }
 
 
