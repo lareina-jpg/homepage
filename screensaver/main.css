@@ -10,10 +10,15 @@ body, html {
     height: 100%;
     background: black;
     overflow: hidden;
-    
-    /* background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
-    background-size: 50px 50px; 
-    background-repeat: repeat;  */
+}
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* behind everything */
 
     background-image:
     radial-gradient(circle, white 1px, transparent 1px),
@@ -22,6 +27,18 @@ body, html {
   
     background-size: 100px 100px, 150px 150px, 200px 200px;
     background-position: 10px 25px, 70px 15px, 90px 130px;
+
+    animation: twinkle 3s ease infinite alternate;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .solar-system {
@@ -35,6 +52,8 @@ body, html {
     height: 100vmin;
     margin: auto;
     overflow: hidden;
+
+    z-index: 1;
 }
 
 .sun {
@@ -172,8 +191,8 @@ body, html {
 
 
 .mercury {
-    width: 4%;
-    height: 4%;
+    width: 10%;
+    height: 10%;
 
     border-radius:50%;
     background-color:rgb(255, 187, 0);
@@ -190,8 +209,8 @@ body, html {
 }
 
 .venus {
-    width: 5%;
-    height: 5%;
+    width: 10%;
+    height: 10%;
 
     border-radius:50%;
     background-color:rgb(160, 147, 110);
@@ -208,8 +227,8 @@ body, html {
 }
 
 .earth {
-    width: 5.5%;
-    height: 5.5%;
+    width: 7%;
+    height: 7%;
 
     border-radius:50%;
     background-color:rgb(33, 146, 212);
@@ -226,8 +245,8 @@ body, html {
 }
 
 .mars {
-    width: 3%;
-    height: 3%;
+    width: 4%;
+    height: 4%;
 
     border-radius:50%;
     background-color:rgb(199, 90, 18);
@@ -244,8 +263,8 @@ body, html {
 }
 
 .jupiter {
-    width: 8%;
-    height: 8%;
+    width: 9%;
+    height: 9%;
 
     border-radius:50%;
     background-color:rgb(84, 113, 123);
@@ -280,8 +299,8 @@ body, html {
 }
 
 .uranus {
-    width: 6%;
-    height: 6%;
+    width: 4%;
+    height: 4%;
 
     border-radius:50%;
     background-color:rgb(97, 75, 241);
@@ -298,8 +317,8 @@ body, html {
 }
 
 .neptune {
-    width: 5.5%;
-    height: 5.5%;
+    width: 3%;
+    height: 3%;
 
     border-radius:50%;
     background-color:rgb(141, 221, 255);
