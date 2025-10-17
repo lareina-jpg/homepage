@@ -1,0 +1,146 @@
+*{
+    box-sizing:border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+body {
+    margin:0px;
+}
+
+.container {
+    position:relative;
+    height: 100vh;
+}
+
+.please-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.yes-btn {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+
+
+.more1-btn {
+    position: absolute;
+    top: 90%;
+    left: 20%;
+}
+
+.more2-btn {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+
+.more3-btn {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+}
+
+.right-btn {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.keep-btn {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.dont1-btn {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.dont2-btn {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+.right2-btn {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+}
+
+.augh-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:1800%;
+    padding: 15px;
+    background-color: rgb(243, 255, 69);
+    color: darkblue;
+    border: none;
+} 
+
+.please-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.yes-btn:hover {
+  background-color: rgb(239, 251, 255);
+  color: rgb(0, 0, 0);
+}
+
+.more1-btn:hover {
+  background-color: rgb(204, 229, 237);
+  color: rgb(23, 23, 24);
+}
+
+.more2-btn:hover {
+  background-color: rgb(171, 222, 239);
+  color: rgb(7, 7, 41);
+}
+
+.more3-btn:hover {
+  background-color: lightblue;
+  color: darkblue;
+}
+
+.right-btn:hover {
+  background-color: rgb(150, 255, 236);
+  color: darkblue;
+}
+
+.keep-btn:hover {
+  background-color: rgb(91, 254, 181);
+  color: darkblue;
+}
+
+.dont1-btn:hover {
+  background-color: rgb(64, 246, 88);
+  color: darkblue;
+}
+
+.dont2-btn:hover {
+  background-color: rgb(58, 237, 4);
+  color: darkblue;
+}
+
+.right2-btn:hover {
+  background-color: rgb(160, 247, 88);
+  color: darkblue;
+}
+
+.augh-btn:hover {
+  background-color: rgb(243, 255, 69);
+  color: darkblue;
+}

@@ -206,6 +206,8 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    animation: planet-spin 5s linear infinite;
 }
 
 .venus {
@@ -224,6 +226,8 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    animation: planet-spin 5s linear infinite;
 }
 
 .earth {
@@ -242,6 +246,8 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    animation: planet-spin 5s linear infinite;
 }
 
 .mars {
@@ -260,6 +266,8 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    animation: planet-spin 5s linear infinite;
 }
 
 .jupiter {
@@ -278,6 +286,8 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    animation: planet-spin 5s linear infinite;
 }
 
 .saturn {
@@ -296,6 +306,8 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    animation: planet-spin 5s linear infinite;
 }
 
 .uranus {
@@ -314,6 +326,8 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    animation: planet-spin 5s linear infinite;
 }
 
 .neptune {
@@ -332,4 +346,11 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    
 }
+
+/* @keyframes planet-spin {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
+} */
