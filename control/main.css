@@ -1,13 +1,21 @@
+html, body, a, button {
+  cursor: url('img/hand2.png') 0 0, auto;
+}
+
 *{
     box-sizing:border-box;
 }
 
 img {
-    max-width:100%;
+  max-width:100%;
 }
 
 body {
-    margin:0px;
+  margin:0px;
+}
+
+button {
+  background-color: rgb(209, 209, 209);
 }
 
 .container {
