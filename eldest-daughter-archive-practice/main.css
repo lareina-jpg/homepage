@@ -1,0 +1,42 @@
+*{
+    box-sizing:border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+html, body {
+    margin:0;
+    /* body has default margin of 8px */
+    overflow: hidden; /* Hide any overflow if the art is larger than the viewport */
+    height:100%;
+}
+
+.map {
+    position: fixed; /* Position the background relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1; /* Place it behind other content */
+    color:#000000; /* Set a suitable color for the ASCII art */
+    background-color: #ffffff; /* Set a background color for the page */
+    }
+
+.map pre {
+    /* Responsive scaling */
+    font-size: min(0.9vw, 0.9vh); /* scales with both width and height */
+    transform: translate(-50%, -50%) scale(1);
+
+
+    font-family: "Lucida Console", Monaco, monospace; /* Use a monospace font for consistent character width */
+    white-space: pre; /* Preserve whitespace and line breaks */
+    line-height: 1em; /* Adjust line height for character spacing */
+    letter-spacing: 0; /* Control spacing between characters */
+    margin: 0;
+    color: #000;
+}

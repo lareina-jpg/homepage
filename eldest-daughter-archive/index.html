@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>eldest daughter archive</title>
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="map">
+        
+            <img id="mapImage" src="img/map.png" alt="Map">
+
+            <!-- map points; all points use data-x/y (0–1 values, relative to true image size) -->
+
+            <a href="locations/virginia.html" target="_blank" rel="noopener noreferrer" class="map-point" data-x="0.275" data-y="0.275" title="Virginia"></a>
+
+            <a href="locations/utah.html" target="_blank" rel="noopener noreferrer" class="map-point" data-x="0.19" data-y="0.265" title="Utah"></a>
+
+            <a href="locations/california.html" target="_blank" rel="noopener noreferrer" class="map-point" data-x="0.16" data-y="0.265" title="California"></a>
+
+            <a href="locations/indiana.html" target="_blank" rel="noopener noreferrer" class="map-point" data-x="0.255" data-y="0.27" title="Indiana"></a>
+
+            <a href="locations/taiwan.html" target="_blank" rel="noopener noreferrer" class="map-point" data-x="0.8" data-y="0.40" title="Taiwan"></a>
+
+            <!-- <a href="#point6" class="map-point" data-x="0.60" data-y="0.10" title="China"></a> -->
+        
+        </div>
+
+        <a href="index.html" class="info-button1">take me home</a>
+        <a href="about.html" class="info-button2">who are you?</a>
+
+
+
+<script>
+const img = document.getElementById('mapImage');
+const points = document.querySelectorAll('.map-point');
+
+function positionPoints() {
+  const rect = img.getBoundingClientRect();
+  const iw = img.naturalWidth;
+  const ih = img.naturalHeight;
+  const ar = iw / ih;
+  const wr = rect.width / rect.height;
+
+  let offsetX = 0, offsetY = 0, visibleW = rect.width, visibleH = rect.height;
+
+  if (wr > ar) { // image is taller than viewport (cropped top/bottom)
+    visibleH = rect.width / ar;
+    offsetY = (rect.height - visibleH) / 2;
+  } else { // image is wider (cropped sides)
+    visibleW = rect.height * ar;
+    offsetX = (rect.width - visibleW) / 2;
+  }
+
+  points.forEach(p => {
+    const x = parseFloat(p.dataset.x); // 0–1 relative coordinate
+    const y = parseFloat(p.dataset.y);
+    p.style.left = `${rect.left + offsetX + visibleW * x}px`;
+    p.style.top = `${rect.top + offsetY + visibleH * y}px`;
+  });
+}
+
+window.addEventListener('resize', positionPoints);
+window.addEventListener('load', positionPoints);
+</script>
+
+</body>
+
+</html>
+</doctype>
